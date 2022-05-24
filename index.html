@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas - UniRitter</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <section class="container">
+
+        <h1>Calcule suas notas da <a href="https://www.uniritter.edu.br/" target="_blank">UniRitter</a>!</h1>
+        <p id="paragrafo">
+            Na UniRitter, o peso das notas N1 e N2 são diferentes: N1 vale 40% da nota e a N2 vale 60%. <br>
+            Então, sabendo a sua nota na N1, será calculado a nota mínima que você precisa tirar na N2 para ser
+            aprovado!
+        </p>
+        <form action="" id="form" method="post">
+            <div>
+                <label for="input-n1"><b>N1</b></label>
+                <br>
+                <input type="text" placeholder="00.00" id="input-n1">
+            </div>
+            <div>
+                <label><b>N2</b></label>
+                <br>
+                <p class="output-n2" readonly>Resultado</p>
+            </div>
+            <br>
+            <div id="botao">
+                <button>Enviar</button>
+            </div>
+        </form>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
